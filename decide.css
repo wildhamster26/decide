@@ -1,0 +1,71 @@
+html, body {
+	height: 95%;
+}
+
+body {
+	font-family: 'Poor Story', cursive;
+	background-color: #FCFBE3;
+}
+
+.container {
+	background-color: white;
+	background-size: cover;
+	width: 95%;
+	height:100%;
+	margin: 1% 2%;
+	text-align: center;
+	padding: 10px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 50px #696969;
+}
+
+/*CREATING A 3 ROW BY 4 COLUMN GRID*/
+.wrapper {
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 3px;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-areas:
+	"t t t o"
+	"i i i p"
+	"i i i u";
+}
+
+/*DIVIDING THE ELEMENTS ACROSS THE GRID AND SETTING THEIR ATTRIBUTES*/
+#mainText {
+	grid-area: t;
+	align-self: center;
+}
+
+#userImage {
+	border: 1px #c4c4c4 solid;
+}
+
+#image {
+	grid-area: i;
+	align-self: center;
+}
+
+#option1 {
+	grid-area: o;
+}
+
+#option2 {
+	grid-area: p;
+}
+
+#input {
+	grid-area: u;
+}
+
+img {
+	max-width:100%;
+	max-height:100%;
+	border-radius: 10px;
+	box-shadow: 5px 5px 50px #696969;
+}
+
+.none {
+	display: none;
+}

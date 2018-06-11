@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Who's game?</title>
+	<link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="decide.css">
+</head>
+<body>
+	<div class="container">
+		<div class="wrapper">
+				<div id="mainText">
+					<h1>Hello.  :)<br> What's your name?</h1>
+					<form>
+						<div>
+							<input type="text" name="userName" id="userName" placeholder="Your name" style="width : 250px">
+						</div>
+						<div>
+							<input type="file" name="userImage" id="userImage" placeholder="Your picture" >
+						</div>
+						<div>
+							<button>Submit</button>
+						</div>
+					</form>
+				</div>
+				<div id="image">
+					<img src="ITAY.png" class="none">
+				</div>
+				<div id="option1">
+					<p></p>
+				</div>
+				<div id="option2">
+					<p></p>
+				</div>
+				<div id="input">
+					<p></p>
+					<input type="text" name="userInput" id="userInput" class="none">
+				</div>
+		</div>
+	</div>
+
+<script type="text/javascript" src="decide.js"></script>
+</body>
+</html>
+
+
+
+<!-- ELEMENTS: 
+	BODY: BACKGROUND, FONT.
+1. WHAT'S YOUR NAME? - HEADLINE, USER INPUT TEXTBOX.  (ADD A PLAYER PICTURE?)
+2. MAIN PATH - WELCOME [INTERACTIVE PLAYER NAME] + EXPLANATION, 2 PATH NAMES, 2 PICTURES, USER INPUT TEXTBOX, SMALL PATH DB.
+3. DOWN THE PATH - STORY PARAGRAPH, STORY PICTURE + RELATIVE PLAYER PICTURE, 2 DECISION OPTION TEXTS, USER INPUT TEXTBOX, LARGE SCENE DBs, END SCENE REPLAY BUTTON (WITH AND WITHOUT SAVING PLAYER NAME/PICTURE VARIABLES).
+-->
