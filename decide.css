@@ -38,10 +38,6 @@ body {
 	align-self: center;
 }
 
-#userImage {
-	border: 1px #c4c4c4 solid;
-}
-
 #image {
 	grid-area: i;
 	align-self: center;
