@@ -1,46 +1,122 @@
 "use strict";
 
-let mainText = document.querySelector("#mainText"),
+let title = document.querySelector("title"),
+	mainText = document.querySelector("#mainText"),
 	image = document.querySelector("#mainImage"),
 	option1 = document.querySelector("#option1"),
 	option2 = document.querySelector("#option2"),
 	input = document.querySelector("#input"),
+	inputPara = document.querySelector("#input p"),
 	userInput = document.querySelector("#userInput"),
 	userNameInput = document.querySelector("#userName");
 
 
 userNameInput.focus();
 
-let player;
-
 userNameInput.addEventListener("keypress", (event) => {
 	//Take user name and picture and put in variables.
 	if (event.keyCode === 13) {
-		player = userNameInput.value;
+		//Create the player name as a global variable
+		window.player = userNameInput.value;
+		//Customize the page with the player's name
+		title.textContent = player + "'s game!";
 		//Make the form disappear from the screen
 		userNameInput.classList.add("none");
 		//Make all scene elements appear
-		userInput.classList.remove("none");
 		image.classList.remove("none");
+		userInput.classList.remove("none");
+		data("welcome", "scene1");
+		userInput.focus();
 	}
 });
 
+var sceneData = {
+	welcome: {
+		scene1: {
+		mainText: "Welcome " + window.player +"!",
+		image: "Hana.jpg",
+		option1: "For the dinosaur storyline type in 'DINO'.",
+		option2: "For the safari storyline type in 'SAFARI'.",
+		input: "What will you decide?"
+		}
+	},
+	dinosaur: {
+		scene1: {
+			mainText: "dinosaur, scene 1",
+			// image: "dinosaur, scene 1",
+			option1: "dinosaur, scene 1",
+			option2: "dinosaur, scene 1",
+			input: "dinosaur, scene 1"
+		},
+		scene2: {
+			mainText: "dinosaur, scene 2",
+			// image: "dinosaur, scene 2",
+			option1: "dinosaur, scene 2",
+			option2: "dinosaur, scene 2",
+			input: "dinosaur, scene 2"
+		},
+		scene3: {
+			mainText: "dinosaur, scene 3",
+			// image: "dinosaur, scene 3",
+			option1: "dinosaur, scene 3",
+			option2: "dinosaur, scene 3",
+			input: "dinosaur, scene 3"
+		}
+	},
+	safari: {
+		scene1: {
+			mainText: "safari, scene 1",
+			// image: "safari, scene 1",
+			option1: "safari, scene 1",
+			option2: "safari, scene 1",
+			input: "safari, scene 1"
+		},
+		scene2: {
+			mainText: "safari, scene 2",
+			// image: "safari, scene 2",
+			option1: "safari, scene 2",
+			option2: "safari, scene 2",
+			input: "safari, scene 2"
+		},
+		scene3: {
+			mainText: "safari, scene 3",
+			// image: "safari, scene 3",
+			option1: "safari, scene 3",
+			option2: "safari, scene 3",
+			input: "safari, scene 3"
+		}
+	}
+};
+
+let data = (storyline, scene) => {
+	mainText.textContent = sceneData[storyline][scene].mainText;
+	image.src = sceneData[storyline][scene].image;
+	option1.textContent = sceneData[storyline][scene].option1;
+	option2.textContent = sceneData[storyline][scene].option2;
+	inputPara.textContent = sceneData[storyline][scene].input;
+	userInput.value = "";	
+};
 
 userInput.addEventListener("keypress", (event) => {
 	//Take user name and picture and put in variables.
 	if (event.keyCode === 13) {
-		
-	}
+		if (userInput.value.toLowerCase() === "dinosaur") {
+			data("dinosaur", "scene1");			
+		} else if (userInput.value.toLowerCase() === "safari") {
+			data("safari", "scene1");			
+		}
+		else {
+			console.log("wrong input");
+		};
+	};
 });
 
 
 
 //Tasks:
-//1. Event handlers to recieve user name and image.
 //2. Write and take pictures of scenes and create a scene DB.
-//3. Change page data according to the scene (main text, image, options 1+2).
-//4. Event handler for the user input text box. Desensitize capitulation.
 //5. Background.
 //6. Use user's image on the regular pictures to "put them in the scene".
 //7. Create a button to return to the first scene without re-entering name and image file.
 //8. Split up to seperate files to make it easier to understand.
+//9. Enable name customization for all scenes with the player's name as given by the userNameInput
