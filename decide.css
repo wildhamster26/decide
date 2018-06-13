@@ -65,3 +65,8 @@ img {
 .none {
 	display: none;
 }
+
+#playerImage {
+	height: 100px;
+	position: absolute;
+}
