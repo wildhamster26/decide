@@ -1,5 +1,3 @@
-"use strict";
-
 let title = document.querySelector("title"),
 	mainText = document.querySelector("#mainText"),
 	image = document.querySelector("#mainImage"),
@@ -10,7 +8,6 @@ let title = document.querySelector("title"),
 	inputPara = document.querySelector("#input p"),
 	userInput = document.querySelector("#userInput"),
 	userNameInput = document.querySelector("#userName");
-
 
 userNameInput.focus();
 
@@ -32,66 +29,6 @@ userNameInput.addEventListener("keypress", (event) => {
 	}
 });
 
-var sceneData = {
-	welcome: {
-		scene1: {
-		mainText: "Welcome " + window.player +"!",
-		image: "assets/path.jpeg",
-		option1: "For the dinosaur storyline type in 'DINO'.",
-		option2: "For the safari storyline type in 'SAFARI'.",
-		input: "What will you decide?"
-		}
-	},
-	dinosaur: {
-		scene1: {
-			mainText: "dinosaur, scene 1",
-			image: "assets/stegosaurus.jpeg",
-			option1: "dinosaur, scene 1",
-			option2: "dinosaur, scene 1",
-			input: "dinosaur, scene 1",
-			playerImage: "width: 33px; height: 33px; margin-left: 397px; margin-top: 90px;"
-		},
-		scene2: {
-			mainText: "dinosaur, scene 2",
-			// image: "dinosaur, scene 2",
-			option1: "dinosaur, scene 2",
-			option2: "dinosaur, scene 2",
-			input: "dinosaur, scene 2"
-		},
-		scene3: {
-			mainText: "dinosaur, scene 3",
-			// image: "dinosaur, scene 3",
-			option1: "dinosaur, scene 3",
-			option2: "dinosaur, scene 3",
-			input: "dinosaur, scene 3"
-		}
-	},
-	safari: {
-		scene1: {
-			mainText: "safari, scene 1",
-			image: "assets/cow.jpeg",
-			option1: "safari, scene 1",
-			option2: "safari, scene 1",
-			input: "safari, scene 1",
-			playerImage: "width: 50px; height: 50px; margin-left: 390px; margin-top: 117px;"
-		},
-		scene2: {
-			mainText: "safari, scene 2",
-			// image: "safari, scene 2",
-			option1: "safari, scene 2",
-			option2: "safari, scene 2",
-			input: "safari, scene 2"
-		},
-		scene3: {
-			mainText: "safari, scene 3",
-			// image: "safari, scene 3",
-			option1: "safari, scene 3",
-			option2: "safari, scene 3",
-			input: "safari, scene 3"
-		}
-	}
-};
-
 let data = (storyline, scene) => {
 	mainText.textContent = sceneData[storyline][scene].mainText;
 	image.src = sceneData[storyline][scene].image;
@@ -105,12 +42,69 @@ let data = (storyline, scene) => {
 userInput.addEventListener("keypress", (event) => {
 	//Take user name and picture and put in variables.
 	if (event.keyCode === 13) {
+		//DINOSAUR STORYLINE
 		if (userInput.value.toLowerCase() === "dinosaur") {
 			data("dinosaur", "scene1");
 			playerImage.classList.remove("none");		
+		} else if (userInput.value.toLowerCase() === "play") {
+			data("dinosaur", "scene2");			
+		} else if (userInput.value.toLowerCase() === "help") {
+			data("dinosaur", "scene3");			
+		} else if (userInput.value.toLowerCase() === "water") {
+			data("dinosaur", "scene4");			
+		} else if (userInput.value.toLowerCase() === "wait") {
+			data("dinosaur", "scene5");			
+		} else if (userInput.value.toLowerCase() === "dad") {
+			data("dinosaur", "scene6");			
+		} else if (userInput.value.toLowerCase() === "run") {
+			data("dinosaur", "scene7");			
+		} else if (userInput.value.toLowerCase() === "doctor") {
+			data("dinosaur", "scene8");			
+		} else if (userInput.value.toLowerCase() === "learn") {
+			data("dinosaur", "scene9");			
+		} else if (userInput.value.toLowerCase() === "slide") {
+			data("dinosaur", "scene10");			
+		} else if (userInput.value.toLowerCase() === "seek") {
+			data("dinosaur", "scene11");			
+		} else if (userInput.value.toLowerCase() === "hide") {
+			data("dinosaur", "scene12");			
+		} else if (userInput.value.toLowerCase() === "home") {
+			data("dinosaur", "scene13");			
+		} else if (userInput.value.toLowerCase() === "fly") {
+			data("dinosaur", "scene14");			
+		} else if (userInput.value.toLowerCase() === "restart") {
+			data("welcome", "scene1");			
 		} else if (userInput.value.toLowerCase() === "safari") {
 			data("safari", "scene1");			
 			playerImage.classList.remove("none");
+		} else if (userInput.value.toLowerCase() === "") {
+			data("safari", "scene2");			
+		} else if (userInput.value.toLowerCase() === "") {
+			data("safari", "scene3");			
+		} else if (userInput.value.toLowerCase() === "") {
+			data("safari", "scene4");			
+		} else if (userInput.value.toLowerCase() === "") {
+			data("safari", "scene5");			
+		} else if (userInput.value.toLowerCase() === "") {
+			data("safari", "scene6");			
+		} else if (userInput.value.toLowerCase() === "") {
+			data("safari", "scene7");			
+		} else if (userInput.value.toLowerCase() === "") {
+			data("safari", "scene8");			
+		} else if (userInput.value.toLowerCase() === "") {
+			data("safari", "scene9");			
+		} else if (userInput.value.toLowerCase() === "") {
+			data("safari", "scene10");			
+		} else if (userInput.value.toLowerCase() === "") {
+			data("safari", "scene11");			
+		} else if (userInput.value.toLowerCase() === "") {
+			data("safari", "scene12");			
+		} else if (userInput.value.toLowerCase() === "") {
+			data("safari", "scene13");			
+		} else if (userInput.value.toLowerCase() === "") {
+			data("safari", "scene14");			
+		} else if (userInput.value.toLowerCase() === "") {
+			data("safari", "scene15");			
 		}
 		else {
 			console.log("wrong input");
@@ -123,7 +117,5 @@ userInput.addEventListener("keypress", (event) => {
 //Tasks:
 //2. Write and take pictures of scenes and create a scene DB.
 //5. Background.
-//6. Use user's image on the regular pictures to "put them in the scene".
 //7. Create a button to return to the first scene without re-entering name and image file.
-//8. Split up to seperate files to make it easier to understand.
 //9. Enable name customization for all scenes with the player's name as given by the userNameInput
