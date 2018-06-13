@@ -3,6 +3,7 @@
 let title = document.querySelector("title"),
 	mainText = document.querySelector("#mainText"),
 	image = document.querySelector("#mainImage"),
+	playerImage = document.querySelector("#playerImage"),
 	option1 = document.querySelector("#option1"),
 	option2 = document.querySelector("#option2"),
 	input = document.querySelector("#input"),
@@ -26,6 +27,7 @@ userNameInput.addEventListener("keypress", (event) => {
 		image.classList.remove("none");
 		userInput.classList.remove("none");
 		data("welcome", "scene1");
+		playerImage.src="assets/player.jpeg";
 		userInput.focus();
 	}
 });
@@ -34,7 +36,7 @@ var sceneData = {
 	welcome: {
 		scene1: {
 		mainText: "Welcome " + window.player +"!",
-		image: "Hana.jpg",
+		image: "assets/path.jpeg",
 		option1: "For the dinosaur storyline type in 'DINO'.",
 		option2: "For the safari storyline type in 'SAFARI'.",
 		input: "What will you decide?"
@@ -43,10 +45,11 @@ var sceneData = {
 	dinosaur: {
 		scene1: {
 			mainText: "dinosaur, scene 1",
-			// image: "dinosaur, scene 1",
+			image: "assets/stegosaurus.jpeg",
 			option1: "dinosaur, scene 1",
 			option2: "dinosaur, scene 1",
-			input: "dinosaur, scene 1"
+			input: "dinosaur, scene 1",
+			playerImage: "width: 33px; height: 33px; margin-left: 397px; margin-top: 90px;"
 		},
 		scene2: {
 			mainText: "dinosaur, scene 2",
@@ -66,10 +69,11 @@ var sceneData = {
 	safari: {
 		scene1: {
 			mainText: "safari, scene 1",
-			// image: "safari, scene 1",
+			image: "assets/cow.jpeg",
 			option1: "safari, scene 1",
 			option2: "safari, scene 1",
-			input: "safari, scene 1"
+			input: "safari, scene 1",
+			playerImage: "width: 50px; height: 50px; margin-left: 390px; margin-top: 117px;"
 		},
 		scene2: {
 			mainText: "safari, scene 2",
@@ -94,6 +98,7 @@ let data = (storyline, scene) => {
 	option1.textContent = sceneData[storyline][scene].option1;
 	option2.textContent = sceneData[storyline][scene].option2;
 	inputPara.textContent = sceneData[storyline][scene].input;
+	playerImage.style = sceneData[storyline][scene].playerImage;
 	userInput.value = "";	
 };
 
@@ -101,9 +106,11 @@ userInput.addEventListener("keypress", (event) => {
 	//Take user name and picture and put in variables.
 	if (event.keyCode === 13) {
 		if (userInput.value.toLowerCase() === "dinosaur") {
-			data("dinosaur", "scene1");			
+			data("dinosaur", "scene1");
+			playerImage.classList.remove("none");		
 		} else if (userInput.value.toLowerCase() === "safari") {
 			data("safari", "scene1");			
+			playerImage.classList.remove("none");
 		}
 		else {
 			console.log("wrong input");
