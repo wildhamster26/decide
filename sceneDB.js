@@ -12,87 +12,87 @@ var sceneData = {
 	dinosaur: {
 		scene1: {
 			mainText: "As you ride the huge stegosaurus, you see many different kinds of dinosaurs. They want to play with you, but the stegosaurus is getting thirsty and says he wants to go to the watering hole.",
-			image: "assets/stegosaurus.jpeg",
+			image: "assets/dino/dino1.jpeg",
 			option1: "To go play with another dinosaur, type in 'PLAY'.",
 			option2: "To go with the stegosaurus to the watering hole, type in 'WATER'.",
-			playerImage: "width: 33px; height: 33px; margin-left: 397px; margin-top: 90px;"
+			playerImage: "width: 33px; height: 33px; margin-left: 120px; margin-top: 114px;"
 		},
 		scene2: {
 			mainText: "After playing with some dinosaurs, you hear a cry of pain. One of the dinosaurs has stepped on a thorn and is in pain.",
-			image: "dinosaur, scene 2",
+			image: "assets/dino/dino2.jpeg",
 			option1: "To help the dinosaur remove the thorn, type in 'HELP'.",
 			option2: "To go look for a dinosaur doctor, type in 'DOCTOR'.",
-			playerImage: "width: 50px; height: 50px; margin-left: 390px; margin-top: 117px;"
+			playerImage: "width: 50px; height: 50px; margin-left: 479px; margin-top: 221px;"
 		},
 		scene3: {
 			mainText: "You remove the thorn from the giant foot. The dinosaur shouts in pain very loudly and all other dinosaurs quickly disappear. The wounded dinosaur thanks you and limps away. You are all alone.",
-			image: "dinosaur, scene 3",
+			image: "assets/dino/dino3.jpeg",
 			option1: "To go to the watering hole type in 'WATER'.",
 			option2: "To wait and try to understand why all the dinosaurs left, type in 'WAIT'.",
-			playerImage: "width: 50px; height: 50px; margin-left: 390px; margin-top: 117px;"
+			playerImage: "width: 40px; height: 40px; margin-left: 435px; margin-top: 308px;"
 		},
 		scene4: {
 			mainText: "You get to the watering hole and find many dinosaurs drinking and playing in the water. A Brachiosaurus and a Pterodactyl offer you to play with them.",
-			image: "assets/stegosaurus.jpeg",
+			image: "assets/dino/dino3.jpeg",
 			option1: "To slide down the brachiosaurus' back into the water, type in 'SLIDE'.",
 			option2: "To go fly with the pterodactyl, type in 'FLY'.",
 			playerImage: "width: 33px; height: 33px; margin-left: 397px; margin-top: 90px;"
 		},
 		scene5: {
 			mainText: "After waiting a bit, you hear a terrifying roar. A T-Rex appears and starts running towards you. What do you do?",
-			image: "dinosaur, scene 2",
+			image: "assets/dino/dino5.jpeg",
 			option1: "To run away, type in 'RUN'.",
 			option2: "To call daddy for help, type in 'DAD'.",
-			playerImage: "width: 50px; height: 50px; margin-left: 390px; margin-top: 117px;"
+			playerImage: "width: 40px; height: 40px; margin-left: 13px; margin-top: 220px;"
 		},
 		scene6: {
 			mainText: "You call your dad. He comes over quickly and tells the mean T-Rex to stop his bullying and go to his room!",
-			image: "dinosaur, scene 3",
+			image: "assets/dino/dino6.jpeg",
 			option1: "",
 			option2: "",
 			input: "Way to go dad!  :)",
-			playerImage: "width: 50px; height: 50px; margin-left: 390px; margin-top: 117px;"
+			playerImage: "width: 35px; height: 35px; margin-left: 178px; margin-top: 360px;"
 		},
 		scene7: {
 			mainText: "You run as fast as you can with the scary T-Rex chasing you. You notice a big cliff with a big vine next to it and run there. As you swing from the vine, the great carnivore can't slow down and falls off the cliff. You are now safe and sound.",
-			image: "assets/stegosaurus.jpeg",
+			image: "assets/dino/dino3.jpeg",
 			option1: "",
 			option2: "",
 			input: "Awesome! You have defeated the tyrannosaurus!",
 			playerImage: "width: 33px; height: 33px; margin-left: 397px; margin-top: 90px;"
 		},
 		scene8: {
-			mainText: "You hurry to the dino-hospital to get a doctor and bring him back to the wounded dinosaur. The doctor gently removes the thorn with your help and asks you if you'd like to be his assistant.",
-			image: "dinosaur, scene 2",
+			mainText: "You hurry to the dino-hospital to get a doctor and bring her back to the wounded dinosaur. The doctor gently removes the thorn with your help and asks you if you'd like to be her assistant.",
+			image: "assets/dino/dino8.jpeg",
 			option1: "To continue helping the doctor, type in 'LEARN'.",
 			option2: "To thank the doctor and go play at the watering hole, type in 'WATER'.",
-			playerImage: "width: 50px; height: 50px; margin-left: 390px; margin-top: 117px;"
+			playerImage: "width: 40px; height: 40px; margin-left: 485px; margin-top: 94px;"
 		},
 		scene9: {
 			mainText: "You spend the rest of the day helping the doctor heal wounded dinosaurs and they all thank you for your kindness. As you go back home you feel really good about helping others.",
-			image: "dinosaur, scene 3",
+			image: "assets/dino/dino9.jpeg",
 			option1: "",
 			option2: "",
 			input: "You are a very good person! Thank you!",
-			playerImage: "width: 50px; height: 50px; margin-left: 390px; margin-top: 117px;"
+			playerImage: "width: 45px; height: 45px; margin-left: 586px; margin-top: 122px;"
 		},
 		scene10: {
 			mainText: "The great brachiosaurus lifts you up on his head and lets you slide down his back and tail into the water. You laugh so hard that more dinosaurs offer to play with you.",
-			image: "assets/stegosaurus.jpeg",
+			image: "assets/dino/dino3.jpeg",
 			option1: "To go play hide-and-seek with many dinosaurs type in 'SEEK'.",
 			option2: "To go fly with the pterodactyl, type in 'FLY'.",
 			playerImage: "width: 33px; height: 33px; margin-left: 397px; margin-top: 90px;"
 		},
 		scene11: {
 			mainText: "Can you find the 5 hiding dinosaurs in the picture?",
-			image: "dinosaur, scene 2",
+			image: "assets/dino/dino3.jpeg",
 			option1: "To finish the game of hide-and-seek and go home, type in 'HOME'.",
 			option2: "To go hide by yourself, type in 'HIDE'.",
 			playerImage: "width: 50px; height: 50px; margin-left: 390px; margin-top: 117px;"
 		},
 		scene12: {
 			mainText: "You go look for the perfect spot and hide, all by yourself. As time goes by, you realize you've hid too well and as the dinosaurs couldn't find you they have went back home.",
-			image: "dinosaur, scene 3",
+			image: "assets/dino/dino3.jpeg",
 			option1: "To go back home, type in 'HOME'.",
 			option2: "To wait and see if any dinosaurs come back, type in 'WAIT'.",
 			playerImage: "width: 50px; height: 50px; margin-left: 390px; margin-top: 117px;"
