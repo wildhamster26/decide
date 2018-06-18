@@ -2,7 +2,6 @@
 //Tasks:
 //2. Write and take pictures of scenes and create a scene DB.
 //5. Background.
-//7. Create a button to return to the first scene without re-entering name and image file.
 //9. Enable name customization for all scenes with the player's name as given by the userNameInput
 
 let title = document.querySelector("title"),
