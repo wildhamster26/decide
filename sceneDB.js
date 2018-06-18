@@ -50,7 +50,7 @@ var sceneData = {
 			mainText: "You call your dad. He comes over quickly and tells the mean T-Rex to stop his bullying and go to his room!",
 			image: "assets/dino/dino6.jpeg",
 			option1: "",
-			option2: "",
+			option2: "To restart the game type in 'RESTART'",
 			input: "Way to go dad!  :)",
 			playerImage: "width: 35px; height: 35px; margin-left: 178px; margin-top: 360px;"
 		},
@@ -58,7 +58,7 @@ var sceneData = {
 			mainText: "You run as fast as you can with the scary T-Rex chasing you. You notice a big cliff with a big vine next to it and run there. As you swing from the vine, the great carnivore can't slow down and falls off the cliff. You are now safe and sound.",
 			image: "assets/dino/dino7.png",
 			option1: "",
-			option2: "",
+			option2: "To restart the game type in 'RESTART'",
 			input: "Awesome! You have defeated the tyrannosaurus!",
 			playerImage: "width: 23px; height: 23px; margin-left: 38px; margin-top: 18px;"
 		},
@@ -73,7 +73,7 @@ var sceneData = {
 			mainText: "You spend the rest of the day helping the doctor heal wounded dinosaurs and they all thank you for your kindness. As you go back home you feel really good about helping others.",
 			image: "assets/dino/dino9.jpeg",
 			option1: "",
-			option2: "",
+			option2: "To restart the game type in 'RESTART'",
 			input: "You are a very good person! Thank you!",
 			playerImage: "width: 45px; height: 45px; margin-left: 594px; margin-top: 123px;"
 		},
@@ -102,7 +102,7 @@ var sceneData = {
 			mainText: "As you start going back home, a small dinosaur you haven't noticed before (maybe the judge), comes and hands you a medal that says 'Congratulations! You are the winner of hide-and-seek!'. You go back home and proudly show the medal to your parents.",
 			image: "assets/dino/dino13.jpg",
 			option1: "",
-			option2: "",
+			option2: "To restart the game type in 'RESTART'",
 			input: "You are the best hide-and-seek player in the dinosaur world!",
 			playerImage: "width: 80px; height: 80px; margin-left: 37px; margin-top: 98px;"
 		},

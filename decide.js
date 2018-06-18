@@ -1,3 +1,10 @@
+
+//Tasks:
+//2. Write and take pictures of scenes and create a scene DB.
+//5. Background.
+//7. Create a button to return to the first scene without re-entering name and image file.
+//9. Enable name customization for all scenes with the player's name as given by the userNameInput
+
 let title = document.querySelector("title"),
 	mainText = document.querySelector("#mainText"),
 	image = document.querySelector("#mainImage"),
@@ -73,7 +80,8 @@ userInput.addEventListener("keypress", (event) => {
 		} else if (userInput.value.toLowerCase() === "fly") {
 			data("dinosaur", "scene14");			
 		} else if (userInput.value.toLowerCase() === "restart") {
-			data("welcome", "scene1");			
+			data("welcome", "scene1");
+			playerImage.style = "display: none";			
 		} else if (userInput.value.toLowerCase() === "safari") {
 			data("safari", "scene1");			
 			playerImage.classList.remove("none");
@@ -113,9 +121,3 @@ userInput.addEventListener("keypress", (event) => {
 });
 
 
-
-//Tasks:
-//2. Write and take pictures of scenes and create a scene DB.
-//5. Background.
-//7. Create a button to return to the first scene without re-entering name and image file.
-//9. Enable name customization for all scenes with the player's name as given by the userNameInput
