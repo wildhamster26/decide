@@ -119,4 +119,3 @@ userInput.addEventListener("keypress", (event) => {
 //5. Background.
 //7. Create a button to return to the first scene without re-entering name and image file.
 //9. Enable name customization for all scenes with the player's name as given by the userNameInput
-//10. Center and enlarge the text for the options and main.

@@ -39,21 +39,27 @@ body {
 	font-size: 2em;
 }
 
+.element {
+	align-self: center;
+}
+
 #image {
 	grid-area: i;
-	align-self: center;
 }
 
 #option1 {
 	grid-area: o;
+	
 }
 
 #option2 {
 	grid-area: p;
+	
 }
 
 #input {
 	grid-area: u;
+
 }
 
 img {
