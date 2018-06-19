@@ -15,6 +15,7 @@ let title = document.querySelector("title"),
 	userInput = document.querySelector("#userInput"),
 	userNameInput = document.querySelector("#userName");
 
+//initial focus on the user name text box
 userNameInput.focus();
 
 userNameInput.addEventListener("keypress", (event) => {
@@ -31,10 +32,12 @@ userNameInput.addEventListener("keypress", (event) => {
 		userInput.classList.remove("none");
 		data("welcome", "scene1");
 		playerImage.src="assets/player.jpeg";
+		//focus on the user input text box after each scene change
 		userInput.focus();
 	}
 });
 
+//Edit the screen according to the selected scene data
 let data = (storyline, scene) => {
 	mainText.textContent = sceneData[storyline][scene].mainText;
 	image.src = sceneData[storyline][scene].image;
@@ -81,7 +84,9 @@ userInput.addEventListener("keypress", (event) => {
 		} else if (userInput.value.toLowerCase() === "restart") {
 			data("welcome", "scene1");
 			playerImage.style = "display: none";			
-		} else if (userInput.value.toLowerCase() === "safari") {
+		} 
+		//SAFARI STORYLINE
+		else if (userInput.value.toLowerCase() === "safari") {
 			data("safari", "scene1");			
 			playerImage.classList.remove("none");
 		} else if (userInput.value.toLowerCase() === "") {

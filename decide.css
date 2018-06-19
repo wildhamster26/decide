@@ -69,10 +69,14 @@ img {
 	box-shadow: 5px 5px 50px #696969;
 }
 
+
+
 .none {
 	display: none;
 }
 
+
+/*THE IMAGE OF THE PLAYER'S FACE, TO PLANT ON THE MAIN IMAGE*/
 #playerImage {
 	height: 100px;
 	position: absolute;
